@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bucles/Bucles.iml" filepath="$PROJECT_DIR$/Bucles/Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Conceptos Basicos/Conceptos Basicos.iml" filepath="$PROJECT_DIR$/Conceptos Basicos/Conceptos Basicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Condicionales/Condicionales.iml" filepath="$PROJECT_DIR$/Condicionales/Condicionales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EnCasa/EnCasa.iml" filepath="$PROJECT_DIR$/EnCasa/EnCasa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Organizado.iml" filepath="$PROJECT_DIR$/.idea/Organizado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funciones/funciones.iml" filepath="$PROJECT_DIR$/funciones/funciones.iml" />
+    </modules>
+  </component>
+</project>
