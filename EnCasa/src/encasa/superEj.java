@@ -2,10 +2,6 @@ package encasa;
 import java.util.*;
 public class superEj {
     public static void main(String[] args) {
-        ejecutarMenu();
-    }
-
-    public static void ejecutarMenu() {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         // ************************************************************
@@ -14,7 +10,82 @@ public class superEj {
         
         int opcion;
         
-        mostrarMenu();
+        System.out.println("Que quieres hacer ? ");
+        System.out.println("Estas son las opciones: ");
+        System.out.println("  1)Ver si podemos salir con Boolean ");
+        System.out.println("  2)Ver los dias que tiene un  mes con switch y case");
+        System.out.println("  3)Calcular el numero mas alto, el mas bajo y la media de estos con while e if");
+        System.out.println("  4)Secuencia ordenada a partir de tres datos: número inicial, número final e intervalo de salto en la secuencia. Usando iF y for");
+        System.out.println("  5)Operaciones usando Switch y case  ");
+        System.out.println("  6)Ver si un numero es capicua");
+        System.out.println("  7)Ejemplo charAt"); 
+        System.out.println("  8)Imprimir piramide con for");
+        System.out.println("  9)Convertir de decimal a binario y viceversa");
+        System.out.println("  10) Calcula raiz cuadrada con do");
+        System.out.println("  11) Reloj");
+        System.out.println("  12) Letra DNI");
+        System.out.println("  13) Crear una tabla ");
+        System.out.println("  14) Mostrar una tabla ");
+        System.out.println("  15) Conocer la longitud de una tabla ");
+        System.out.println("  16) Mostrar una tabla de distintos formas ");
+        System.out.println("  17) Rellenar todo una tabla ");
+        System.out.println("  18) Ordenar una tabla ");
+        System.out.println("  19) Desordenar una tabla ");
+        System.out.println("  20) Buscar en tabla ordenada ");
+        System.out.println("  21) Buscar en tabla desordenada ");
+        System.out.println("  22) Ordenar y buscar ");
+        System.out.println("  23) Copiar una tabla ");
+        System.out.println("  24) Copiar un rango ");
+        System.out.println("  25) Copiar elementos entre tablas ");
+        System.out.println("  26) Añadir al final ");
+        System.out.println("  27) Insertar en orden ");
+        System.out.println("  28) Insertar en orden sin repetidos ");
+        System.out.println("  29) Añadir sin repetidos ");
+// INICIO AÑADIDO: opciones nuevas del menú
+        System.out.println("  30) Eliminar en tabla desordenada ");
+        System.out.println("  31) Eliminar en tabla ordenada ");
+        System.out.println("  32) Vaciar tabla ");
+        System.out.println("  33) Comparar tablas ");
+        System.out.println("  34) Suma, máximo, mínimo y media ");
+        System.out.println("  35) Buscar todos los índices ");
+        System.out.println("  36) Sumar grupos consecutivos ");
+        System.out.println("  37) Invertir tabla ");
+        System.out.println("  38) Quitar repetidos ");
+        System.out.println("  39) Desordenar copia ");
+        System.out.println("  40) Longitud y recorrido con charAt ");
+        System.out.println("  41) Contar vocales ");
+        System.out.println("  42) Contar una letra ");
+        System.out.println("  43) Contar fragmentos ");
+        System.out.println("  44) Buscar un fragmento ");
+        System.out.println("  45) Invertir una cadena ");
+        System.out.println("  46) Quitar espacios ");
+        System.out.println("  47) Quitar vocales ");
+        System.out.println("  48) Unir textos ");
+        System.out.println("  49) Insertar texto ");
+        System.out.println("  50) Eliminar un rango de texto ");
+        System.out.println("  51) Sustituir texto ");
+        System.out.println("  52) Comparar igualdad ");
+        System.out.println("  53) Palíndroma ");
+        System.out.println("  54) Anagramas ");
+        System.out.println("  55) Separar palabras ");
+        System.out.println("  56) Ordenar palabras ");
+        System.out.println("  57) String y char[] ");
+        System.out.println("  58) Mayúsculas y minúsculas ");
+        System.out.println("  59) Extraer substring ");
+        System.out.println("  60) Comparación alfabética ");
+        System.out.println("  61) Contar palabras ");
+        System.out.println("  62) Iniciales ");
+        System.out.println("  63) Primera letra mayúscula ");
+        System.out.println("  64) Quitar un carácter ");
+        System.out.println("  65) Ordenar letras ");
+        System.out.println("  66) Contar espacios ");
+        System.out.println("  67) EJERCICIO tablas: buscarTodos ");
+        System.out.println("  68) EJERCICIO tablas: desordenar y copiar ");
+        System.out.println("  69) EJERCICIO tablas: suma de consecutivos ");
+        System.out.println("  70) EJERCICIO cadenas: ahorcado ");
+        System.out.println("  71) EJERCICIO cadenas: agenda ");
+        System.out.println("  72) EJERCICIO cadenas: frase ordenada ");
+// FIN AÑADIDO: opciones nuevas del menú
         opcion = sc.nextInt();
         
         //Creamos un par de tablas
@@ -345,8 +416,10 @@ public class superEj {
                 System.out.println("Letra: " + letra); 
                     }
             case 13 -> {
-                int[] nombreTabla = crearTabla(sc);
+                int[] nombreTabla = crearTabla();
+// INICIO AÑADIDO: mostrar resultado nombreTabla int[] nombreTabla = crearTabla
                 mostrarTabla(nombreTabla);
+// FIN AÑADIDO: mostrar resultado nombreTabla int[] nombreTabla = crearTabla
             }
             case 14 -> {
                 
@@ -360,10 +433,22 @@ public class superEj {
                 mostrarTablasDeDisintosModos(tabla1);
             } 
             case 17 -> {
-                rellenarTabla(tabla1, sc);
+                rellenarTabla(tabla1);
             } 
-            case 18 -> { ordenarTabla(tabla2); mostrarTabla(tabla2); }
-            case 19 -> { desordenarTabla(tabla1); mostrarTabla(tabla1); }
+            case 18 -> {
+                ordenarTabla(tabla1);
+// INICIO AÑADIDO: mostrar resultado tabla1 ordenarTabla
+                mostrarTabla(tabla1);
+// FIN AÑADIDO: mostrar resultado tabla1 ordenarTabla
+            }
+            case 19 -> {
+                desordenarTabla(tabla1);
+// INICIO AÑADIDO: mostrar resultado tabla1 desordenarTabla
+                mostrarTabla(tabla1);
+// FIN AÑADIDO: mostrar resultado tabla1 desordenarTabla
+            }     
+
+// INICIO AÑADIDO: case nuevos
             case 20 -> {
                 System.out.print("Número que buscas en la tabla ordenada: ");
                 mostrarTabla(tabla1);
@@ -448,10 +533,114 @@ public class superEj {
                 System.out.println("Original: "); mostrarTabla(tabla1);
                 System.out.println("Copia desordenada: "); mostrarTabla(tabla3);
             }
-            case 40 -> menuCadenas(sc);
-            case 41 -> chuletaTablas();
-            case 0 -> System.out.println("Fin de los apuntes.");
+                case 40 -> { sc.nextLine(); mostrarCaracteres(leerTexto(sc, "Frase: ")); }
+                case 41 -> { sc.nextLine(); System.out.println(contarVocales(leerTexto(sc, "Frase: "))); }
+                case 42 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    String letra = leerTexto(sc, "Letra: ");
+                    if (letra.length() == 1) {
+                        System.out.println(contarLetra(frase, letra.charAt(0)));
+                    } else { System.out.println("Introduce una sola letra."); }
+                }
+                case 43 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    System.out.println(contarPalabra(frase, leerTexto(sc, "Fragmento que cuentas: ")));
+                }
+                case 44 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    System.out.println("Posición (-1 si no está): " + buscar(frase, leerTexto(sc, "Texto que buscas: ")));
+                }
+                case 45 -> { sc.nextLine(); System.out.println(alReves(leerTexto(sc, "Frase: "))); }
+                case 46 -> { sc.nextLine(); System.out.println(sinEspacios(leerTexto(sc, "Frase: "))); }
+                case 47 -> { sc.nextLine(); System.out.println(sinVocales(leerTexto(sc, "Frase: "))); }
+                case 48 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Primer texto: ");
+                    System.out.println(unir(frase, leerTexto(sc, "Segundo texto: ")));
+                }
+                case 49 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    String nuevo = leerTexto(sc, "Texto que insertas: ");
+                    System.out.print("Posición: ");
+                    int posicion = sc.nextInt();
+                    if (posicion >= 0 && posicion <= frase.length()) {
+                        System.out.println(insertar(frase, nuevo, posicion));
+                    } else { System.out.println("Posición incorrecta."); }
+                }
+                case 50, 59 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    System.out.print("Desde: "); int desde = sc.nextInt();
+                    System.out.print("Hasta (sin incluir): "); int hasta = sc.nextInt();
+                    if (desde >= 0 && desde <= hasta && hasta <= frase.length()) {
+                        if (opcion == 50) { System.out.println(eliminar(frase, desde, hasta)); }
+                        else { System.out.println(frase.substring(desde, hasta)); }
+                    } else { System.out.println("Rango incorrecto."); }
+                }
+                case 51 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    String antiguo = leerTexto(sc, "Texto que sustituyes: ");
+                    String nuevo = leerTexto(sc, "Texto nuevo: ");
+                    System.out.println(sustituir(frase, antiguo, nuevo));
+                }
+                case 52 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Primer texto: ");
+                    System.out.println(iguales(frase, leerTexto(sc, "Segundo texto: ")));
+                }
+                case 53 -> { sc.nextLine(); System.out.println(esPalindroma(leerTexto(sc, "Frase sin tildes: "))); }
+                case 54 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Primera palabra: ");
+                    System.out.println(sonAnagramas(frase, leerTexto(sc, "Segunda palabra: ")));
+                }
+                case 55 -> { sc.nextLine(); System.out.println(Arrays.toString(separarPalabras(leerTexto(sc, "Frase (un espacio entre palabras): ")))); }
+                case 56 -> { sc.nextLine(); System.out.println(Arrays.toString(ordenarPalabras(leerTexto(sc, "Frase (un espacio entre palabras): ")))); }
+                case 57 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    char letras[] = pasarATabla(frase);
+                    System.out.println(Arrays.toString(letras));
+                    System.out.println(pasarACadena(letras));
+                }
+                case 58 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    System.out.println(frase.toLowerCase()); System.out.println(frase.toUpperCase());
+                }
+                case 60 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Primera palabra: ").toLowerCase();
+                    String otra = leerTexto(sc, "Segunda palabra: ").toLowerCase();
+                    System.out.println("Negativo: antes; cero: iguales; positivo: después.");
+                    System.out.println(frase.compareTo(otra));
+                }
+                case 61 -> { sc.nextLine(); System.out.println(contarPalabras(leerTexto(sc, "Frase: "))); }
+                case 62 -> { sc.nextLine(); System.out.println(iniciales(leerTexto(sc, "Nombre completo: "))); }
+                case 63 -> { sc.nextLine(); System.out.println(primeraMayuscula(leerTexto(sc, "Palabra: "))); }
+                case 64 -> {
+                    sc.nextLine();
+                    String frase = leerTexto(sc, "Frase: ");
+                    String letra = leerTexto(sc, "Carácter que eliminas: ");
+                    if (letra.length() == 1) {
+                        System.out.println(quitarCaracter(frase, letra.charAt(0)));
+                    } else { System.out.println("Introduce un solo carácter."); }
+                }
+                case 65 -> { sc.nextLine(); System.out.println(ordenarLetras(leerTexto(sc, "Palabra: "))); }
+                case 66 -> { sc.nextLine(); System.out.println(contarEspacios(leerTexto(sc, "Frase: "))); }
+            case 67 -> ejercicioBuscarTodos();
+            case 68 -> ejercicioDesordenar();
+            case 69 -> ejercicioSuma();
+            case 70 -> ahorcado(sc);
+            case 71 -> { sc.nextLine(); agenda(sc); }
+            case 72 -> { sc.nextLine(); ejercicioOrdenarFrase(sc); }
 
+// FIN AÑADIDO: case nuevos
             default -> System.out.println("ERROR, introduce un numero dentro del rango");
                  // notas 
                 /*
@@ -489,18 +678,14 @@ public class superEj {
     // ************************************************************
     // Crear una tabla
     // ************************************************************
-    static int[] crearTabla(Scanner sc) {
-        sc.nextLine(); // Consumimos el salto pendiente de nextInt().
+    static int[] crearTabla() {
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Nombre de la tabla: ");
         String nombre = sc.nextLine();
 
         System.out.print("Longitud de la tabla: ");
         int longitud = sc.nextInt();
-        while (longitud < 0) {
-            System.out.print("La longitud debe ser 0 o mayor: ");
-            longitud = sc.nextInt();
-        }
 
         int[] tabla = new int[longitud];
 
@@ -550,8 +735,9 @@ public class superEj {
     // ************************************************************
     // Rellenar todo un Array
     // ************************************************************
-    static int[] rellenarTabla(int[] tabla, Scanner sc) {
+    static int[] rellenarTabla(int[] tabla) {
         System.out.println("De que numero quieres rellenar ? ");
+        Scanner sc = new Scanner(System.in);
         int valor = sc.nextInt();
         Arrays.fill(tabla, valor);
         mostrarTabla(tabla);
@@ -729,54 +915,11 @@ public class superEj {
 
 
 
+// INICIO AÑADIDO: funciones y ejercicios
 
-    public static void mostrarMenu() {
-        System.out.println("APUNTES DE JAVA: elige una opción (datos de ejemplo en tablas).");
-        System.out.println("1) Boolean: decidir si podemos salir");
-        System.out.println("2) Días de un mes con switch");
-        System.out.println("3) Máximo, mínimo y media con while");
-        System.out.println("4) Secuencia con un salto");
-        System.out.println("5) Calculadora");
-        System.out.println("6) Número capicúa");
-        System.out.println("7) Ejemplo charAt (tema 6)");
-        System.out.println("8) Pirámide");
-        System.out.println("9) Conversión decimal y binario");
-        System.out.println("10) Raíz cuadrada entera");
-        System.out.println("11) Reloj");
-        System.out.println("12) Letra del DNI");
-        System.out.println("13) Crear y mostrar una tabla");
-        System.out.println("14) Longitud de una tabla");
-        System.out.println("15) Mostrar una tabla");
-        System.out.println("16) Distintas formas de recorrer tablas");
-        System.out.println("17) Rellenar una tabla");
-        System.out.println("18) Ordenar una tabla");
-        System.out.println("19) Desordenar una tabla");
-        System.out.println("20) Buscar en tabla ordenada");
-        System.out.println("21) Buscar en tabla desordenada");
-        System.out.println("22) Ordenar y buscar");
-        System.out.println("23) Copiar una tabla");
-        System.out.println("24) Copiar un rango");
-        System.out.println("25) Copiar elementos entre tablas");
-        System.out.println("26) Añadir al final");
-        System.out.println("27) Insertar en orden");
-        System.out.println("28) Insertar en orden sin repetidos");
-        System.out.println("29) Añadir al final sin repetidos");
-        System.out.println("30) Eliminar en tabla desordenada");
-        System.out.println("31) Eliminar en tabla ordenada");
-        System.out.println("32) Vaciar una tabla");
-        System.out.println("33) Comparar tablas");
-        System.out.println("34) Suma, máximo, mínimo y media");
-        System.out.println("35) Buscar todos los índices");
-        System.out.println("36) Sumar grupos consecutivos");
-        System.out.println("37) Invertir tabla");
-        System.out.println("38) Quitar repetidos");
-        System.out.println("39) Desordenar una copia");
-        System.out.println("40) CADENAS: funciones y chuleta del tema 6");
-        System.out.println("41) CHULETA de tablas del tema 5");
-        System.out.println("0) Salir");
-    }
-
-    // TEMA 5: funciones con tablas de números.
+    // ============================================================
+    // FUNCIONES ADICIONALES DE TABLAS (TEMA 5)
+    // ============================================================
     public static int suma(int t[]) {
         int suma = 0;
         for (int i = 0; i < t.length; i++) {
@@ -845,25 +988,6 @@ public class superEj {
         return resultado;
     }
 
-    public static double[] insertarElementoEnTabla(double t[], double elem) {
-        t = Arrays.copyOf(t, t.length + 1);
-        t[t.length - 1] = elem;
-        return t;
-    }
-
-    public static String[] insertarElementoEnTabla(String t[], String elem) {
-        t = Arrays.copyOf(t, t.length + 1);
-        t[t.length - 1] = elem;
-        return t;
-    }
-
-    public static boolean[] insertarElementoEnTabla(boolean t[], boolean elem) {
-        t = Arrays.copyOf(t, t.length + 1);
-        t[t.length - 1] = elem;
-        return t;
-    }
-
-    // Suma de grupos consecutivos. Si no caben grupos, devuelve una tabla vacía.
     public static int[] suma(int t[], int numElementos) {
         int resultado[] = new int[0];
         if (numElementos > 0 && numElementos <= t.length) {
@@ -882,226 +1006,9 @@ public class superEj {
         desordenarTabla(copia);
         return copia;
     }
-
-    public static void chuletaTablas() {
-        System.out.println("TEMA 5: TABLAS");
-        System.out.println("int t[] = {4, 7, 4}; // índices 0, 1 y 2");
-        System.out.println("t.length: longitud. t[i]: valor. i: posición.");
-        System.out.println("Arrays.toString(t): muestra los valores.");
-        System.out.println("Arrays.sort(t): ordena y modifica t.");
-        System.out.println("Arrays.binarySearch(t, clave): necesita t ordenada.");
-        System.out.println("En binarySearch un resultado negativo significa que no está.");
-        System.out.println("Arrays.copyOf(t, longitud): crea una copia con esa longitud.");
-        System.out.println("Arrays.copyOfRange(t, desde, hasta): hasta no se incluye.");
-        System.out.println("Arrays.fill(t, valor): rellena toda la tabla.");
-        System.out.println("Arrays.equals(a, b): compara valores y orden.");
-        System.out.println("t = insertarNoOrdenada(t, 9); // guarda la tabla devuelta");
-        System.out.println("int copia[] = t; comparte la tabla; no copia los elementos.");
-        System.out.println("Máximo, mínimo y media: necesitan una tabla con elementos.");
-    }
-
-    // Un Scanner compartido. nextLine recoge una frase completa, incluidos espacios.
-    public static String leerTexto(Scanner sc, String mensaje) {
-        System.out.print(mensaje);
-        return sc.nextLine();
-    }
-
-    public static void menuCadenas(Scanner sc) {
-        int opcion;
-        do {
-            mostrarMenuCadenas();
-            opcion = sc.nextInt();
-            sc.nextLine(); // Retiramos el salto que deja nextInt antes de leer frases.
-            String frase;
-            switch (opcion) {
-                case 1 -> mostrarCaracteres(leerTexto(sc, "Frase: "));
-                case 2 -> System.out.println(contarVocales(leerTexto(sc, "Frase: ")));
-                case 3 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    String letra = leerTexto(sc, "Letra: ");
-                    if (letra.length() == 1) {
-                        System.out.println(contarLetra(frase, letra.charAt(0)));
-                    } else { System.out.println("Introduce una sola letra."); }
-                }
-                case 4 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    System.out.println(contarPalabra(frase, leerTexto(sc, "Fragmento que cuentas: ")));
-                }
-                case 5 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    System.out.println("Posición (-1 si no está): " + buscar(frase, leerTexto(sc, "Texto que buscas: ")));
-                }
-                case 6 -> System.out.println(alReves(leerTexto(sc, "Frase: ")));
-                case 7 -> System.out.println(sinEspacios(leerTexto(sc, "Frase: ")));
-                case 8 -> System.out.println(sinVocales(leerTexto(sc, "Frase: ")));
-                case 9 -> {
-                    frase = leerTexto(sc, "Primer texto: ");
-                    System.out.println(unir(frase, leerTexto(sc, "Segundo texto: ")));
-                }
-                case 10 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    String nuevo = leerTexto(sc, "Texto que insertas: ");
-                    System.out.print("Posición: ");
-                    int posicion = sc.nextInt();
-                    if (posicion >= 0 && posicion <= frase.length()) {
-                        System.out.println(insertar(frase, nuevo, posicion));
-                    } else { System.out.println("Posición incorrecta."); }
-                }
-                case 11, 20 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    System.out.print("Desde: "); int desde = sc.nextInt();
-                    System.out.print("Hasta (sin incluir): "); int hasta = sc.nextInt();
-                    if (desde >= 0 && desde <= hasta && hasta <= frase.length()) {
-                        if (opcion == 11) { System.out.println(eliminar(frase, desde, hasta)); }
-                        else { System.out.println(frase.substring(desde, hasta)); }
-                    } else { System.out.println("Rango incorrecto."); }
-                }
-                case 12 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    String antiguo = leerTexto(sc, "Texto que sustituyes: ");
-                    String nuevo = leerTexto(sc, "Texto nuevo: ");
-                    System.out.println(sustituir(frase, antiguo, nuevo));
-                }
-                case 13 -> {
-                    frase = leerTexto(sc, "Primer texto: ");
-                    System.out.println(iguales(frase, leerTexto(sc, "Segundo texto: ")));
-                }
-                case 14 -> System.out.println(esPalindroma(leerTexto(sc, "Frase sin tildes: ")));
-                case 15 -> {
-                    frase = leerTexto(sc, "Primera palabra: ");
-                    System.out.println(sonAnagramas(frase, leerTexto(sc, "Segunda palabra: ")));
-                }
-                case 16 -> System.out.println(Arrays.toString(separarPalabras(leerTexto(sc, "Frase (un espacio entre palabras): "))));
-                case 17 -> System.out.println(Arrays.toString(ordenarPalabras(leerTexto(sc, "Frase (un espacio entre palabras): "))));
-                case 18 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    char letras[] = pasarATabla(frase);
-                    System.out.println(Arrays.toString(letras));
-                    System.out.println(pasarACadena(letras));
-                }
-                case 19 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    System.out.println(frase.toLowerCase()); System.out.println(frase.toUpperCase());
-                }
-                case 21 -> {
-                    frase = leerTexto(sc, "Primera palabra: ").toLowerCase();
-                    String otra = leerTexto(sc, "Segunda palabra: ").toLowerCase();
-                    System.out.println("Negativo: antes; cero: iguales; positivo: después.");
-                    System.out.println(frase.compareTo(otra));
-                }
-                case 22 -> System.out.println(contarPalabras(leerTexto(sc, "Frase: ")));
-                case 23 -> System.out.println(iniciales(leerTexto(sc, "Nombre completo: ")));
-                case 24 -> System.out.println(primeraMayuscula(leerTexto(sc, "Palabra: ")));
-                case 25 -> {
-                    frase = leerTexto(sc, "Frase: ");
-                    String letra = leerTexto(sc, "Carácter que eliminas: ");
-                    if (letra.length() == 1) {
-                        System.out.println(quitarCaracter(frase, letra.charAt(0)));
-                    } else { System.out.println("Introduce un solo carácter."); }
-                }
-                case 26 -> System.out.println(ordenarLetras(leerTexto(sc, "Palabra: ")));
-                case 27 -> chuletaCadenas();
-                case 28 -> System.out.println(contarEspacios(leerTexto(sc, "Frase: ")));
-                case 0 -> System.out.println("Fin del submenú de cadenas.");
-                default -> System.out.println("Opción incorrecta.");
-            }
-        } while (opcion != 0);
-    }
-
-    public static void mostrarMenuCadenas() {
-        System.out.println("\nTEMA 6: CADENAS DE CARACTERES");
-        System.out.println("1) Longitud y charAt: recorrer letras  2) Contar vocales");
-        System.out.println("3) Contar una letra  4) Contar un fragmento  5) Buscar un fragmento");
-        System.out.println("6) Invertir  7) Quitar espacios  8) Quitar vocales  9) Unir textos");
-        System.out.println("10) Insertar texto  11) Borrar un rango  12) Sustituir texto");
-        System.out.println("13) Comparar igualdad  14) Palíndroma  15) Anagramas");
-        System.out.println("16) Separar palabras  17) Ordenar palabras  18) String y char[]");
-        System.out.println("19) Mayúsculas y minúsculas  20) Extraer substring  21) compareTo");
-        System.out.println("22) Contar palabras  23) Iniciales  24) Primera letra mayúscula");
-        System.out.println("25) Quitar un carácter  26) Ordenar letras  27) CHULETA  28) Contar espacios  0) Salir");
-        System.out.print("Opción: ");
-    }
-
-    public static void chuletaCadenas() {
-        System.out.println("String frase = \"Hola mundo\";");
-        System.out.println("frase.length(): 10. En String lleva (); en tablas es t.length.");
-        System.out.println("frase.charAt(0): H. Último índice: frase.length() - 1.");
-        System.out.println("frase.substring(0, 4): Hola. El límite final NO se incluye.");
-        System.out.println("frase.indexOf(\"mundo\"): 5; si no aparece devuelve -1.");
-        System.out.println("frase.equals(otra): compara contenido. No uses == para esto.");
-        System.out.println("frase.equalsIgnoreCase(otra): ignora mayúsculas.");
-        System.out.println("frase.compareTo(otra): negativo antes, 0 iguales, positivo después.");
-        System.out.println("frase = frase.toLowerCase(); // guarda el resultado");
-        System.out.println("frase = frase.toUpperCase();");
-        System.out.println("frase = frase.replace(\"Hola\", \"Adiós\");");
-        System.out.println("String palabras[] = frase.split(\" \"); // separador: un espacio");
-        System.out.println("char letras[] = frase.toCharArray(); String copia = String.valueOf(letras);");
-        System.out.println("Scanner: next() lee una palabra; nextLine() lee la línea completa.");
-        System.out.println("Después de nextInt(), usa nextLine() para consumir el salto pendiente.");
-        System.out.println("Las cadenas no se modifican: los métodos devuelven otra cadena.");
-        System.out.println("Ordenar palabras usa el orden de String de Java; aquí trabajamos en minúsculas.");
-    }
-
-    public static void mostrarCaracteres(String frase) {
-        System.out.println("Longitud: " + frase.length());
-        for (int i = 0; i < frase.length(); i++) {
-            System.out.println("Índice " + i + ": " + frase.charAt(i));
-        }
-    }
-
-    // Cuenta el inicio de cada palabra; también admite varios espacios seguidos.
-    public static int contarPalabras(String frase) {
-        int cantidad = 0;
-        boolean dentro = false;
-        for (int i = 0; i < frase.length(); i++) {
-            if (frase.charAt(i) == ' ') {
-                dentro = false;
-            } else if (!dentro) {
-                cantidad++;
-                dentro = true;
-            }
-        }
-        return cantidad;
-    }
-
-    public static String iniciales(String frase) {
-        String resultado = "";
-        boolean comienzo = true;
-        for (int i = 0; i < frase.length(); i++) {
-            if (frase.charAt(i) == ' ') {
-                comienzo = true;
-            } else if (comienzo) {
-                resultado = resultado + Character.toUpperCase(frase.charAt(i));
-                comienzo = false;
-            }
-        }
-        return resultado;
-    }
-
-    public static String primeraMayuscula(String palabra) {
-        if (palabra.length() > 0) {
-            palabra = Character.toUpperCase(palabra.charAt(0)) + palabra.substring(1);
-        }
-        return palabra;
-    }
-
-    public static String quitarCaracter(String frase, char letra) {
-        String resultado = "";
-        for (int i = 0; i < frase.length(); i++) {
-            if (frase.charAt(i) != letra) {
-                resultado = resultado + frase.charAt(i);
-            }
-        }
-        return resultado;
-    }
-
-    public static String ordenarLetras(String palabra) {
-        char letras[] = palabra.toLowerCase().toCharArray();
-        Arrays.sort(letras);
-        return String.valueOf(letras);
-    }
-
-    // TEMA 6: funciones con cadenas; aquí también podemos usar tablas.
+    // ============================================================
+    // FUNCIONES DE CADENAS DE CARACTERES (TEMA 6)
+    // ============================================================
     // ************************************************************
     // RECORRER Y CONTAR
     // ************************************************************
@@ -1306,4 +1213,336 @@ public class superEj {
         return palabras;
     }
 
-}
+    public static String leerTexto(Scanner sc, String mensaje) {
+        System.out.print(mensaje);
+        return sc.nextLine();
+    }
+
+    public static void mostrarCaracteres(String frase) {
+        System.out.println("Longitud: " + frase.length());
+        for (int i = 0; i < frase.length(); i++) {
+            System.out.println("Índice " + i + ": " + frase.charAt(i));
+        }
+    }
+
+    public static int contarPalabras(String frase) {
+        int cantidad = 0;
+        boolean dentro = false;
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) == ' ') {
+                dentro = false;
+            } else if (!dentro) {
+                cantidad++;
+                dentro = true;
+            }
+        }
+        return cantidad;
+    }
+
+    public static String iniciales(String frase) {
+        String resultado = "";
+        boolean comienzo = true;
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) == ' ') {
+                comienzo = true;
+            } else if (comienzo) {
+                resultado = resultado + Character.toUpperCase(frase.charAt(i));
+                comienzo = false;
+            }
+        }
+        return resultado;
+    }
+
+    public static String primeraMayuscula(String palabra) {
+        if (palabra.length() > 0) {
+            palabra = Character.toUpperCase(palabra.charAt(0)) + palabra.substring(1);
+        }
+        return palabra;
+    }
+
+    public static String quitarCaracter(String frase, char letra) {
+        String resultado = "";
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) != letra) {
+                resultado = resultado + frase.charAt(i);
+            }
+        }
+        return resultado;
+    }
+
+    public static String ordenarLetras(String palabra) {
+        char letras[] = palabra.toLowerCase().toCharArray();
+        Arrays.sort(letras);
+        return String.valueOf(letras);
+    }
+
+    // Inserción para las tablas de cadenas, como en tus apuntes.
+    public static String[] insertarElementoEnTabla(String t[], String elem) {
+        t = Arrays.copyOf(t, t.length + 1);
+        t[t.length - 1] = elem;
+        return t;
+    }
+
+    // ============================================================
+    // EJERCICIOS DE TABLAS Y CADENAS
+    // ============================================================
+
+    public static void ejercicioBuscarTodos() {
+        int t[] = {4, 7, 4, 2, 4};
+        int clave = 4;
+        System.out.println("Tabla: " + Arrays.toString(t));
+        System.out.println("Clave: " + clave);
+        System.out.println("Posiciones: " + Arrays.toString(buscarTodos(t, clave)));
+    }
+
+    public static void ejercicioDesordenar() {
+        int t[] = {1, 2, 3, 4, 5};
+        int copia[] = desordenarCopia(t);
+        System.out.println("Copia desordenada: " + Arrays.toString(copia));
+        System.out.println("Original sin modificar: " + Arrays.toString(t));
+        desordenarTabla(t);
+        System.out.println("Original modificada: " + Arrays.toString(t));
+    }
+
+    public static void ejercicioSuma() {
+        int t[] = {10, 1, 5, 8, 9, 2};
+        System.out.println("Tabla: " + Arrays.toString(t));
+        System.out.println("Sumas de grupos de 3: " + Arrays.toString(suma(t, 3)));
+    }
+
+    public static void ejercicioOrdenarFrase(Scanner sc) {
+        System.out.print("Frase con un espacio entre palabras: ");
+        String frase = sc.nextLine();
+        String palabras[] = ordenarPalabras(frase);
+        System.out.println("Palabras ordenadas:");
+        for (int i = 0; i < palabras.length; i++) {
+            System.out.println(palabras[i]);
+        }
+    }
+
+    public static void ahorcado(Scanner sc) {
+
+        System.out.print("Jugador A, introduce una palabra: ");
+        String palabra = sc.next().toLowerCase();
+        int intentos = palabra.length() * 2;
+        String oculta = crearGuiones(palabra);
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println();
+        }
+
+        while (intentos > 0 && !palabra.equals(oculta)) {
+            mostrarPalabra(oculta);
+            System.out.println("Intentos: " + intentos);
+            System.out.print("Jugador B, introduce una letra: ");
+            char letra = sc.next().toLowerCase().charAt(0);
+
+            oculta = descubrirLetra(palabra, oculta, letra);
+            intentos--;
+        }
+
+        mostrarPalabra(oculta);
+
+        if (palabra.equals(oculta)) {
+            System.out.println("¡Gana el jugador B!");
+        } else {
+            System.out.println("¡Gana el jugador A!");
+        }
+
+        System.out.println("La palabra era: " + palabra);
+    }
+
+    public static String crearGuiones(String palabra) {
+        String guiones = "";
+
+        for (int i = 0; i < palabra.length(); i++) {
+            guiones = guiones + "_";
+        }
+
+        return guiones;
+    }
+
+    public static String descubrirLetra(String palabra, String oculta, char letra) {
+        String resultado = "";
+
+        for (int i = 0; i < palabra.length(); i++) {
+            if (palabra.charAt(i) == letra) {
+                resultado = resultado + letra;
+            } else {
+                resultado = resultado + oculta.charAt(i);
+            }
+        }
+
+        return resultado;
+    }
+
+    public static void mostrarPalabra(String oculta) {
+        System.out.print("Palabra: ");
+
+        for (int i = 0; i < oculta.length(); i++) {
+            System.out.print(oculta.charAt(i) + " ");
+        }
+
+        System.out.println();
+    }
+
+    public static void agenda(Scanner sc) {
+        String contactos[] = new String[0];
+        String opcion;
+
+        do {
+            System.out.println("a) Añadir un contacto");
+        System.out.println("b) Buscar un teléfono por el nombre");
+        System.out.println("c) Mostrar los contactos ordenados por nombre");
+        System.out.println("d) Salir");
+        System.out.print("Elige una opción: ");
+            opcion = sc.nextLine().toLowerCase();
+
+            switch (opcion) {
+                case "a" -> contactos = anadirContacto(contactos, sc);
+                case "b" -> consultarTelefono(contactos, sc);
+                case "c" -> mostrarContactos(contactos);
+                case "d" -> System.out.println("Fin de la agenda.");
+                default -> System.out.println("Opción incorrecta.");
+            }
+        } while (!opcion.equals("d"));
+    }
+
+    public static String[] anadirContacto(String contactos[], Scanner sc) {
+        System.out.print("Nombre: ");
+        String nombre = sc.nextLine();
+        System.out.print("Teléfono: ");
+        String telefono = sc.nextLine();
+
+        if (nombre.length() == 0 || telefono.length() == 0
+                || nombre.indexOf(':') != -1 || telefono.indexOf(':') != -1) {
+            System.out.println("Introduce nombre y teléfono sin usar el carácter ':'.");
+        } else {
+            contactos = insertarElementoEnTabla(contactos, nombre + ":" + telefono);
+            System.out.println("Contacto añadido.");
+        }
+
+        return contactos;
+    }
+
+    public static String obtenerNombre(String contacto) {
+        int separador = contacto.indexOf(':');
+        // El nombre ocupa desde el principio hasta antes de los dos puntos.
+        return contacto.substring(0, separador);
+    }
+
+    public static String buscarTelefono(String contactos[], String nombre) {
+        String telefono = "";
+        int i = 0;
+
+        while (i < contactos.length && telefono.equals("")) {
+            if (obtenerNombre(contactos[i]).equalsIgnoreCase(nombre)) {
+                int separador = contactos[i].indexOf(':');
+                telefono = contactos[i].substring(separador + 1);
+            }
+            i++;
+        }
+
+        return telefono;
+    }
+
+    public static void consultarTelefono(String contactos[], Scanner sc) {
+        if (contactos.length == 0) {
+            System.out.println("La agenda está vacía.");
+        } else {
+            System.out.print("Nombre que quieres buscar: ");
+            String nombre = sc.nextLine();
+            String telefono = buscarTelefono(contactos, nombre);
+
+            if (telefono.equals("")) {
+                System.out.println("No se ha encontrado ese contacto.");
+            } else {
+                System.out.println("Teléfono: " + telefono);
+            }
+        }
+    }
+
+    public static void ordenarContactos(String contactos[]) {
+        for (int i = 0; i < contactos.length - 1; i++) {
+            for (int j = i + 1; j < contactos.length; j++) {
+                String primero = obtenerNombre(contactos[i]).toLowerCase();
+                String segundo = obtenerNombre(contactos[j]).toLowerCase();
+
+                // Si compareTo es positivo, primero va después de segundo.
+                if (primero.compareTo(segundo) > 0) {
+                    String auxiliar = contactos[i];
+                    contactos[i] = contactos[j];
+                    contactos[j] = auxiliar;
+                }
+            }
+        }
+    }
+
+    public static void mostrarContactos(String contactos[]) {
+        if (contactos.length == 0) {
+            System.out.println("La agenda está vacía.");
+        } else {
+            ordenarContactos(contactos);
+
+            for (int i = 0; i < contactos.length; i++) {
+                System.out.println(contactos[i]);
+            }
+        }
+    }
+
+    /*
+    ============================================================
+    CHULETAS RÁPIDAS: consultar aquí; no tienen una opción de menú.
+    ============================================================
+    TABLAS (TEMA 5)
+    int t[] = {4, 7, 4};       // índices 0, 1 y 2
+    t.length                  // longitud; sin paréntesis
+    t[i]                      // valor; i es la posición
+    Arrays.toString(t)        // mostrar todos los valores
+    Arrays.sort(t)            // ordena y modifica t
+    Arrays.fill(t, 5)         // rellena con 5
+    Arrays.binarySearch(t, 7) // necesita tabla ordenada; negativo si no está
+    Arrays.copyOf(t, 5)       // otra tabla, con longitud 5
+    Arrays.copyOfRange(t, 1, 3) // desde incluido, hasta excluido
+    Arrays.equals(a, b)       // mismos valores en el mismo orden
+    int copia[] = t;          // comparte la tabla; no copia sus valores
+    t = insertarNoOrdenada(t, 9); // guardar la tabla devuelta
+    Máximo, mínimo y media necesitan una tabla con elementos.
+
+    CADENAS (TEMA 6; también podemos utilizar tablas)
+    String frase = "Hola mundo";
+    frase.length()             // 10; lleva paréntesis
+    frase.charAt(0)            // 'H'; último índice: length() - 1
+    frase.substring(0, 4)      // "Hola"; 4 no se incluye
+    frase.indexOf("mundo")     // 5; -1 si no aparece
+    frase.equals(otra)         // compara contenido; no usar ==
+    frase.equalsIgnoreCase(otra) // ignora mayúsculas
+    frase.compareTo(otra)      // negativo: antes, 0: iguales, positivo: después
+    frase = frase.toLowerCase();
+    frase = frase.toUpperCase();
+    frase = frase.replace("Hola", "Adiós");
+    String palabras[] = frase.split(" "); // un espacio como separador
+    char letras[] = frase.toCharArray();
+    String copia = String.valueOf(letras);
+    Los métodos devuelven otra cadena: hay que guardar el resultado.
+
+    ENTRADA CON SCANNER
+    sc.next()                  // una palabra
+    sc.nextLine()              // línea completa, incluidos espacios
+    sc.nextInt()               // un entero; deja pendiente el salto de línea
+    sc.nextLine();             // consumir ese salto antes de leer una frase
+    Compartir el Scanner que recibe la función para las opciones nuevas.
+    */
+
+// FIN AÑADIDO: funciones y ejercicios
+}//cierre del todo 
+
+
+
+
+
+
+
+
+
+
