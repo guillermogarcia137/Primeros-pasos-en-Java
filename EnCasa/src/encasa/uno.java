@@ -17,7 +17,7 @@ public class uno {
             contador++;
             System.out.println("Siguiente numero: ");
             numero = sc.nextDouble();
-            media = suma/contador;
+            
 
         }
         System.out.println("El numero max es "+ max + " el min es " 

@@ -1,0 +1,44 @@
+   ============================================================
+    CHULETAS RÁPIDAS: consultar aquí; no tienen una opción de menú.
+    ============================================================
+    TABLAS (TEMA 5)
+    int t[] = {4, 7, 4};       // índices 0, 1 y 2
+    t.length                  // longitud; sin paréntesis
+    t[i]                      // valor; i es la posición
+    Arrays.toString(t)        // mostrar todos los valores
+    Arrays.sort(t)            // ordena y modifica t
+    Arrays.fill(t, 5)         // rellena con 5
+    Arrays.binarySearch(t, 7) // necesita tabla ordenada; negativo si no está
+    Arrays.copyOf(t, 5)       // otra tabla, con longitud 5
+    Arrays.copyOfRange(t, 1, 3) // desde incluido, hasta excluido
+    Arrays.equals(a, b)       // mismos valores en el mismo orden
+    int copia[] = t;          // comparte la tabla; no copia sus valores
+    t = insertarNoOrdenada(t, 9); // guardar la tabla devuelta
+    Máximo, mínimo y media necesitan una tabla con elementos.
+
+    CADENAS (TEMA 6; también podemos utilizar tablas)
+    String frase = "Hola mundo";
+    frase.length()             // 10; lleva paréntesis
+    frase.charAt(0)            // 'H'; último índice: length() - 1
+    frase.substring(0, 4)      // "Hola"; 4 no se incluye
+    frase.indexOf("mundo")     // 5; -1 si no aparece
+    frase.equals(otra)         // compara contenido; no usar ==
+    frase.equalsIgnoreCase(otra) // ignora mayúsculas
+    frase.compareTo(otra)      // negativo: antes, 0: iguales, positivo: después
+    frase = frase.toLowerCase();
+    frase = frase.toUpperCase();
+    frase = frase.replace("Hola", "Adiós");
+    String palabras[] = frase.split(" "); // un espacio como separador
+    char letras[] = frase.toCharArray();
+    String copia = String.valueOf(letras);
+    Los métodos devuelven otra cadena: hay que guardar el resultado.
+
+    ENTRADA CON SCANNER
+    sc.next()                  // una palabra
+    sc.nextLine()              // línea completa, incluidos espacios
+    sc.nextInt()               // un entero; deja pendiente el salto de línea
+    sc.nextLine();             // consumir ese salto antes de leer una frase
+    Compartir el Scanner que recibe la función para las opciones nuevas.
+    */
+
+// FIN AÑADIDO: funciones y ejercicios

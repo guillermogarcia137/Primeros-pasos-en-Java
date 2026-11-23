@@ -17,9 +17,10 @@ public class ejDni {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+                  Scanner sc = new Scanner(System.in); 
+
         int codigo, numero;
         char letra;
-          Scanner sc = new Scanner(System.in); 
         System.out.println("Dime tu DNI: ");
         numero = sc.nextInt();
         codigo = numero%23;
